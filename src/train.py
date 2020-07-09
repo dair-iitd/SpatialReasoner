@@ -16,10 +16,12 @@ from utils import common
 # No Bert
 # random.seed(2208)
 # torch.manual_seed(2208)
+# learning rate: 0.0002
 
 # Bert
 # random.seed(2207)
 # torch.manual_seed(2207)
+# learning rate: 0.001
 
 class TrainDataset(Dataset):
     def __init__(self, dataset, num_negative_samples):
@@ -137,7 +139,7 @@ if(__name__ == "__main__"):
     defaults["batch_size"] = 20
     defaults["num_epochs"] = 15
     defaults["margin"] = 0.5
-    defaults["learning_rate"] = 0.002
+    defaults["learning_rate"] = 0.0002 is defaults["model"].startswith("Bert") else 0.001
     defaults["num_negative_samples"] = 40
     defaults["pretrained_model_path"] = None
     defaults["save_model_file_path"] = project_root_path / ("models/%s.th" % defaults["model"])
