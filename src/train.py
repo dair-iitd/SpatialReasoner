@@ -133,9 +133,9 @@ if(__name__ == "__main__"):
 
     defaults["dataset_file_path"] = project_root_path / "dataset/train.json"
     defaults["model"] = "SPNet"
-    defaults["num_examples"] = 1000
-    defaults["batch_size"] = 5
-    defaults["num_epochs"] = 20
+    defaults["num_examples"] = 6000
+    defaults["batch_size"] = 20
+    defaults["num_epochs"] = 15
     defaults["margin"] = 0.5
     defaults["learning_rate"] = 0.002
     defaults["num_negative_samples"] = 40
