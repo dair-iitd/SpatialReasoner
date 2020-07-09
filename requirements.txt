@@ -1,0 +1,9 @@
+nltk
+tqdm
+numpy
+torch
+pandas
+tabulate
+haversine
+nested_lookup
+transformers

@@ -1,0 +1,3 @@
+name: spatial-reasoner
+dependencies:
+  - python=3

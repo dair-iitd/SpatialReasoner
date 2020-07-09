@@ -1,0 +1,194 @@
+{
+    "Do you have any recommendations of ENTITY near the LOCATION ?": {
+        "weights": [1],
+        "group": "close1"
+    },
+    "Does anyone have ideas on ENTITY close to LOCATION ? Thank you !": {
+        "weights": [1],
+        "group": "close1"
+    },
+    "Hello ! Could anyone please suggest ENTITY in the neighborhood of LOCATION ?": {
+        "weights": [1],
+        "group": "close1"
+    },
+    "Good Morning ! Can someone please propose ENTITY not very far from LOCATION ?": {
+        "weights": [1],
+        "group": "close1"
+    },
+    "I once lived around LOCATION . Does anyone have ideas of ENTITY close to the LOCATION ? Thanks !": {
+        "weights": [0, 1],
+        "group": "iclose1"
+    },
+    "Any nice suggestions of ENTITY near the LOCATION ? I will be going to LOCATION the next day .": {
+        "weights": [1, 0],
+        "group": "iclose1"
+    },
+    "I just came from LOCATION . Someone , please recommend ENTITY in the neighborhood of LOCATION .": {
+        "weights": [0, 1],
+        "group": "iclose1"
+    },
+    "Could anyone propose ENTITY not far from the LOCATION ? I need to leave for LOCATION urgently .": {
+        "weights": [1, 0],
+        "group": "iclose1"
+    },
+    "Any suggestions for ENTITY quite far from the LOCATION ? Thank you very much !": {
+        "weights": [-1],
+        "group": "far1"
+    },
+    "Somebody please suggest ENTITY cut off from LOCATION . Have a good day !": {
+        "weights": [-1],
+        "group": "far1"
+    },
+    "Does anyone have suggestions for ENTITY away from LOCATION ? Thanks a lot !": {
+        "weights": [-1],
+        "group": "far1"
+    },
+    "Good Afternoon ! Any proposals for ENTITY not very close to the LOCATION ?": {
+        "weights": [-1],
+        "group": "far1"
+    },
+    "Hey ! I will be staying at LOCATION . Please suggest ENTITY cut off from LOCATION .": {
+        "weights": [0, -1],
+        "group": "ifar1"
+    },
+    "Any pleasant ideas of ENTITY far off the LOCATION ? I might then be visiting LOCATION .": {
+        "weights": [-1, 0],
+        "group": "ifar1"
+    },
+    "I came from LOCATION this afternoon . Any proposal for ENTITY not close to the LOCATION ?": {
+        "weights": [0, -1],
+        "group": "ifar1"
+    },
+    "Does anyone have a suggestion for ENTITY distant from LOCATION ? By the way , I came from LOCATION yesterday .": {
+        "weights": [-1, 0],
+        "group": "ifar1"
+    },
+    "Suggestions for ENTITY close to both LOCATION and LOCATION ?": {
+        "weights": [1, 1],
+        "group": "close2"
+    },
+    "Some good ideas of ENTITY between LOCATION and LOCATION ? Thanks much !": {
+        "weights": [1, 1],
+        "group": "close2"
+    },
+    "Please advise ENTITY close to LOCATION and not very far off the LOCATION .": {
+        "weights": [1, 1],
+        "group": "close2"
+    },
+    "Any ideas for ENTITY near LOCATION and also close to LOCATION would be welcomed ?": {
+        "weights": [1, 1],
+        "group": "close2"
+    },
+    "We came from LOCATION this morning . Suggestions for ENTITY close to both LOCATION and LOCATION ?": {
+        "weights": [0, 1, 1],
+        "group": "iclose2"
+    },
+    "Any ideas of ENTITY between LOCATION and LOCATION ? I would be going to LOCATION . Thanks .": {
+        "weights": [1, 1, 0],
+        "group": "iclose2"
+    },
+    "We might be staying around LOCATION . Please advise ENTITY close to LOCATION and not far from LOCATION .": {
+        "weights": [0, 1, 1],
+        "group": "iclose2"
+    },
+    "Could anyone suggest ideas for ENTITY close to LOCATION and around LOCATION ? We could be going to LOCATION soon .": {
+        "weights": [1, 1, 0],
+        "group": "iclose2"
+    },
+    "Suggestions on ENTITY far from both LOCATION and LOCATION ? Thank !": {
+        "weights": [-1, -1],
+        "group": "far2"
+    },
+    "Hi ! Any idea of ENTITY far away from LOCATION and LOCATION ?": {
+        "weights": [-1, -1],
+        "group": "far2"
+    },
+    "Could anyone please propose ENTITY not close to LOCATION and also far from LOCATION ?": {
+        "weights": [-1, -1],
+        "group": "far2"
+    },
+    "Does anyone have any suggestions for ENTITY far from LOCATION and not around LOCATION ?": {
+        "weights": [-1, -1],
+        "group": "far2"
+    },
+    "We will be staying near the LOCATION . Suggestions for ENTITY far from both LOCATION and LOCATION will be welcomed .": {
+        "weights": [0, -1, -1],
+        "group": "ifar2"
+    },
+    "Any idea of ENTITY far away from LOCATION and LOCATION ? I would then be visiting LOCATION .": {
+        "weights": [-1, -1, 0],
+        "group": "ifar2"
+    },
+    "Hi , I will be staying near the LOCATION . Could anyone propose ENTITY not very close to LOCATION and far from LOCATION ?": {
+        "weights": [0, -1, -1],
+        "group": "ifar2"
+    },
+    "Does anyone have suggestions for ENTITY far from LOCATION and also far from LOCATION ? I will then be visiting LOCATION too .": {
+        "weights": [-1, -1, 0],
+        "group": "ifar2"
+    },
+    "Any good ideas of ENTITY far from LOCATION but close to LOCATION would be appreciated ? Best Regards .": {
+        "weights": [-1, 1],
+        "group": "mixed"
+    },
+    "Anyone having ideas of ENTITY close to LOCATION but far from LOCATION ?": {
+        "weights": [1, -1],
+        "group": "mixed"
+    },
+    "Someone please advise ENTITY far from LOCATION but not very far from LOCATION .": {
+        "weights": [-1, 1],
+        "group": "mixed"
+    },
+    "Suggest ENTITY close to LOCATION but not in the neighborhood of LOCATION . Thank you so much !": {
+        "weights": [1, -1],
+        "group": "mixed"
+    },
+    "Does anyone have good ideas of ENTITY far from LOCATION but near LOCATION ? Regards .": {
+        "weights": [-1, 1],
+        "group": "mixed"
+    },
+    "Please suggest ideas of ENTITY in the neighborhood of LOCATION but far from LOCATION .": {
+        "weights": [1, -1],
+        "group": "mixed"
+    },
+    "Could anyone advise ENTITY far from LOCATION but not too far from LOCATION ?": {
+        "weights": [-1, 1],
+        "group": "mixed"
+    },
+    "Any nice ideas of ENTITY close to LOCATION but not in the neighborhood of LOCATION . Thanks !": {
+        "weights": [1, -1],
+        "group": "mixed"
+    },
+    "Tomorrow, I would be coming to stay at LOCATION . Anyone having ideas of ENTITY close to LOCATION but far from LOCATION ?": {
+        "weights": [0, 1, -1],
+        "group": "imixed"
+    },
+    "Please propose ENTITY far from LOCATION but not far from LOCATION . I will then be exploring LOCATION .": {
+        "weights": [-1, 1, 0],
+        "group": "imixed"
+    },
+    "I came from LOCATION this evening . Any nice ideas for ENTITY far from LOCATION but close to LOCATION would be appreciated ? ": {
+        "weights": [0, -1, 1],
+        "group": "imixed"
+    },
+    "Suggest ENTITY close to LOCATION but not near LOCATION . Tomorrow, I will be leaving for LOCATION .": {
+        "weights": [1, -1, 0],
+        "group": "imixed"
+    },
+    "Yesterday, I came to stay at LOCATION . Any ideas of ENTITY close to LOCATION but far from LOCATION ?": {
+        "weights": [0, 1, -1],
+        "group": "imixed"
+    },
+    "Suggestions of ENTITY far from LOCATION but not very far from LOCATION . I will then be moving to LOCATION .": {
+        "weights": [-1, 1, 0],
+        "group": "imixed"
+    },
+    "I came from LOCATION today . Any good ideas for ENTITY far from LOCATION but near to LOCATION would be welcomed ? ": {
+        "weights": [0, -1, 1],
+        "group": "imixed"
+    },
+    "Advise ENTITY close to LOCATION but not close to LOCATION . I might be leaving for LOCATION soon .": {
+        "weights": [1, -1, 0],
+        "group": "imixed"
+    }
+}

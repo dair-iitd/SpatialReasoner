@@ -1,3 +1,12 @@
+data/train.json
+data/dev.json
+data/test.json
+data/utils/city_type_entity_data.json
+data/utils/city_type_entity_location.json
+dataset/
+java/
+models/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
