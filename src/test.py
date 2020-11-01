@@ -7,11 +7,29 @@ import argparse
 import pandas as pd
 import torch.nn as nn
 import torch.optim as optim
+from scipy import stats
 from collections import defaultdict
 from torch.nn.utils.rnn import pad_sequence
 from torch.utils.data.dataset import Dataset
 from . import net
 from utils import common
+
+class Correlator:
+    def __init__(self):
+        self.count = 0
+        self.rho = 0
+        self.pval = 0
+
+    def update(l1, l2):
+        r1 = list(range(1, len(l1) + 1))
+        r2 = [l2.index(i) + 1 for i in l1]
+
+        rho, pval = stats.spearmanr(r1, r2)
+
+        self.count += 1
+        self.rho += (rho - self.rho) / self.count
+        self.pval += (pval - self.pval) / self.count
+
 
 class TestExample(Dataset):
     def __init__(self, item, entity_location_map):
@@ -116,6 +134,7 @@ def test(options):
     print("Batch Size: %d" % (options.batch_size))
     print()
 
+    correlator = Correlator()
     results = []
 
     print("Testing . . .")
@@ -144,6 +163,10 @@ def test(options):
             item["distances"] = common.getCandidateDistances(candidate_locations = [entity_location_map[entity_id] for entity_id in sorted_candidate_ids[:3]], locations = [entity_location_map[item["gold_id"]]])
 
             results.append(item)
+
+            sorted_candidate_ids_by_oracle = common.getSortedCandidateIdsByOracle(item["weights"], item["chosen_ids"], item["chosen_locations"], entity_location_map)
+            correlator.update(sorted_candidate_ids_by_oracle, sorted_candidate_ids)
+
             bar.update()
 
     bar.close()
@@ -152,6 +175,9 @@ def test(options):
     print()
     print("Results")
     print(table)
+    print()
+    print("Correlation")
+    print("rho: %f, pval: %f" % (correlator.rho, correlator.pval))
 
 if(__name__ == "__main__"):
     project_root_path = common.getProjectRootPath()
